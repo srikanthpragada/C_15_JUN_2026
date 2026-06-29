@@ -10,8 +10,11 @@ void main()
         printf("Enter a number :");
         scanf("%d",&num);
 
-        if(num > largest)
+        if(largest == 0)  // First iteration
              largest = num;
+        else
+            if (num > largest)
+                 largest = num;
 
      }
 
