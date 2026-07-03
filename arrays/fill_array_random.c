@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 void main()
@@ -7,6 +8,8 @@ void main()
 
   int a[5];
   int i;
+
+      srand(time(0)); // init random seed
 
       printf("Enter 5 values :");
 
