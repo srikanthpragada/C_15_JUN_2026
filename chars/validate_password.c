@@ -5,7 +5,7 @@
 void main()
 {
  char ch;
- int i, uppercase  = 0, digit = 0;
+ int i, uppercase  = 0, digit = 0, special = 0;
 
      printf("Enter Your PIN :");
 
@@ -19,10 +19,13 @@ void main()
          else
             if (isupper(ch))
                 uppercase = 1;
+            else
+                if( ch == '*' || ch == '#' || ch == '_')
+                     special = 1;
      }
 
 
-     if(digit && uppercase)
+     if(digit && uppercase && special)
         printf("\nValid Password");
      else
         printf("\nInvalid Password");
