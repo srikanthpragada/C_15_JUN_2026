@@ -6,7 +6,6 @@ void main()
  char name[20];
  int i;
 
-
      printf("Enter your name :");
      gets(name);
 
